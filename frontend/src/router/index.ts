@@ -52,13 +52,18 @@ const routes: RouteRecordRaw[] = [
     component: () => import('../views/TeamDetail.vue')
   },
   {
+    path: '/profile',
+    name: 'StudentProfile',
+    component: () => import('../views/StudentProfile.vue')
+  },
+  {
     path: '/ai-recommend',
     name: 'AiRecommend',
     component: () => import('../views/AiRecommend.vue')
   }
 ]
 
-// 使用createWebHistory实现HTML5 history模式
+// 使用 createWebHistory 实现 HTML5 history 模式
 const router = createRouter({
   history: createWebHistory(),
   routes
